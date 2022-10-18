@@ -91,3 +91,10 @@ st.pyplot(fig2)
 # 참 다양한 그래프가 있는데 왜 맨날 bar만 생각나는지 원! 그리고 집계!
 # raw data에 대한 그래프를 그리는 연습을 좀 해야한다. 분명히!
 
+fig3, axes = plt.subplots()
+sns.scatterplot(data = data, x='weight', y='mpg', hue = 'cylinders', palette = 'rainbow').set_title('mpg VS cylinders')
+st.pyplot(fig3)
+
+fig4, axes = plt.subplots()
+sns.violinplot(data=data, x='cylinders', y='mpg').set_title('mpg per cylinders')
+st.pyplot(fig4)
