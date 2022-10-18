@@ -98,3 +98,9 @@ st.pyplot(fig3)
 fig4, axes = plt.subplots()
 sns.violinplot(data=data, x='cylinders', y='mpg').set_title('mpg per cylinders')
 st.pyplot(fig4)
+
+## 오 그냥 이렇게 해줘도 되나? 된다!!
+
+fig5 = sns.catplot(data= data, x='model_year', y='mpg', kind = 'box')
+plt.title('연식 별 연비')
+st.pyplot(fig5)
