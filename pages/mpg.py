@@ -41,7 +41,7 @@ st.sidebar.header("User Input Features")
 
 selected_model = st.sidebar.selectbox('name', list(data.name.unique()))
 
-start_year = st.sidebar.selectbox('Start Year', list(reversed(range(data.model_year.min(), data.model_year.max()))))
+start_year = st.sidebar.selectbox('Start Year', list(range(data.model_year.min(), data.model_year.max())))
 end_year = st.sidebar.selectbox('End Year', list(reversed(range(data.model_year.min(), data.model_year.max()))))
 
 selected_year = range(start_year, end_year + 1)
